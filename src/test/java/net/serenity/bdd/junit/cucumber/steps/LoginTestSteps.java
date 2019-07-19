@@ -1,11 +1,10 @@
 package net.serenity.bdd.junit.cucumber.steps;
 
-import net.serenity.bdd.junit.cucumber.model.LoginData;
+import net.serenity.bdd.junit.cucumber.utils.LoginData;
 import net.serenity.bdd.junit.cucumber.pages.AccountsPage;
 import net.serenity.bdd.junit.cucumber.pages.LoginPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.junit.Assert;
 
 /**
  * Created by arun on 25/05/2017.
@@ -19,10 +18,12 @@ public class LoginTestSteps extends ScenarioSteps {
     public void openHomePage(){
         LP.openHomePage_PO();
     }
+
     @Step
-    public void performLogin(LoginData dp) {
-        LP.performLogin(dp);
+    public void performLogin(String username,String password) {
+        LP.performLogin(username,password);
     }
+
     @Step
     public void isInboxPresent() {
         System.out.println(AP.isInBoxLinkPresent());
@@ -39,8 +40,8 @@ public class LoginTestSteps extends ScenarioSteps {
     }
 
     @Step
-    public void errorMessageIsPresent(LoginData dp){
-        LP.errorMessageVidisblr(dp);
+    public void errorMessageIsPresent(String errorMessage){
+        LP.errorMessageVidisblr(errorMessage);
     }
 
     @Step
@@ -49,7 +50,7 @@ public class LoginTestSteps extends ScenarioSteps {
     }
 
     @Step
-    public void enterLoginInfo(LoginData dp){
-        LP.enterLoginInfo(dp);
+    public void enterLoginInfo(String username,String password){
+        LP.enterLoginInfo(username,password);
     }
 }

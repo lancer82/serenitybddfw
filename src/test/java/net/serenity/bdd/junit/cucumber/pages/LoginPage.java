@@ -1,6 +1,6 @@
 package net.serenity.bdd.junit.cucumber.pages;
 
-import net.serenity.bdd.junit.cucumber.model.LoginData;
+import net.serenity.bdd.junit.cucumber.utils.LoginData;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.At;
@@ -26,15 +26,15 @@ public class LoginPage extends PageObject {
     private WebElement loginOrangeLogo;
 
     @FindBy(id="spanMessage")
-    private WebElement errorMessage;
+    private WebElement errorInfo;
 
     public void openHomePage_PO(){
         open();
     }
 
-    public void performLogin(LoginData dp) {
-        loginEmailField.sendKeys(dp.getUserName());
-        loginPasswordField.sendKeys(dp.getPassword());
+    public void performLogin(String username, String password) {
+        loginEmailField.sendKeys(username);
+        loginPasswordField.sendKeys(password);
         loginSubmitButton.click();
     }
 
@@ -48,13 +48,13 @@ public class LoginPage extends PageObject {
         loginOrangeLogo.isDisplayed();
     }
 
-    public void errorMessageVidisblr(LoginData dp){
-        Assert.assertEquals("the expect is"+dp.getErrorMessage()+"and the actual is"+errorMessage.getText(),dp.getErrorMessage(),errorMessage.getText());
+    public void errorMessageVidisblr(String errorMessage){
+        Assert.assertEquals(errorInfo.getText(),errorMessage);
     }
 
-    public void enterLoginInfo(LoginData dp){
-        loginEmailField.sendKeys(dp.getUserName());
-        loginPasswordField.sendKeys(dp.getPassword());
+    public void enterLoginInfo(String username,String password){
+        loginEmailField.sendKeys(username);
+        loginPasswordField.sendKeys(password);
     }
 
     public void clickLoginBtn(){
