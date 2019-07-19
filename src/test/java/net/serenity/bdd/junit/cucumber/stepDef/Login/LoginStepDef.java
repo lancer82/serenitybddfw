@@ -4,17 +4,16 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenity.bdd.junit.cucumber.utils.LoginData;
 import net.serenity.bdd.junit.cucumber.stepDef.GenericConstant;
 import net.serenity.bdd.junit.cucumber.steps.LoginTestSteps;
 import net.thucydides.core.annotations.Steps;
+
 
 /**
  * Created by arunkumar on 24-05-2017.
  */
 public class LoginStepDef extends GenericConstant {
 
-    LoginData dp = new LoginData();
 
     @Steps
     LoginTestSteps LT_steps;
@@ -53,7 +52,6 @@ public class LoginStepDef extends GenericConstant {
 
     @When("^I enter Invalid username \"([^\"]*)\"and\"([^\"]*)\"$")
     public void iEnterInvalidUsernameAnd(String username, String password) throws Throwable {
-        dp.setAll(username, password);
         LT_steps.enterLoginInfo(username,password);
     }
 
