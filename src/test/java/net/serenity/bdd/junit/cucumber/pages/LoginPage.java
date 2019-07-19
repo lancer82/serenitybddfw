@@ -3,14 +3,14 @@ package net.serenity.bdd.junit.cucumber.pages;
 import net.serenity.bdd.junit.cucumber.model.LoginData;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
-import net.thucydides.core.annotations.DefaultUrl;
+import net.thucydides.core.annotations.At;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
 /**
  * Created by arun on 25/05/2017.
  */
-@DefaultUrl("https://opensource-demo.orangehrmlive.com/")
+@At("https://opensource-demo.orangehrmlive.com/")
 public class LoginPage extends PageObject {
 
     @FindBy(id="txtUsername")
