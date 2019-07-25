@@ -1,11 +1,16 @@
 package net.serenity.bdd.junit.cucumber.pages;
 
-import net.serenity.bdd.junit.cucumber.utils.LoginData;
+
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.At;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchWindowException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import java.util.Set;
 
 /**
  * Created by arun on 25/05/2017.
@@ -39,9 +44,28 @@ public class LoginPage extends PageObject {
     }
 
     public void verifyLoginPage(){
+
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.sogou.com/");
+        Set<String> allWindowsHandle = driver.getWindowHandles();
+        if(!allWindowsHandle.isEmpty()){
+            for(String windowHandle:allWindowsHandle){
+                try{
+                    if(driver.switchTo().window(windowHandle).getCurrentUrl().contains("sogou")){
+                        driver.findElement(By.id("query")).sendKeys("admin");
+                        break;
+                    }
+                }catch(NoSuchWindowException e){
+                    e.printStackTrace();
+                }
+            }
+        }
+        //driver.switchTo().window(parentWindowHandle);
+        driver.quit();
         loginEmailField.isDisplayed();
         loginPasswordField.isDisplayed();
         loginSubmitButton.isDisplayed();
+
     }
 
     public void orangeLogoDisplayed(){
