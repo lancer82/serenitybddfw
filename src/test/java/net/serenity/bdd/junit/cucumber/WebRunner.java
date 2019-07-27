@@ -9,9 +9,9 @@ import org.junit.runner.RunWith;
  */
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "src/test/resources/features/InvalidLogin/InvalidLogin.feature",
-        plugin = {"pretty","html:target/cucumber","json:target/json/cucumber.json"})
-        //tags = {"@UnLogin"})
+@CucumberOptions(features = "src/test/resources/features",
+        plugin = {"pretty","html:target/cucumber","json:target/json/cucumber.json"},
+        tags = {"@UnLogin"})
 public class WebRunner{
 
 }
