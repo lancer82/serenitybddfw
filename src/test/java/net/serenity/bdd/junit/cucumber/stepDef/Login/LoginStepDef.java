@@ -7,6 +7,11 @@ import cucumber.api.java.en.When;
 import net.serenity.bdd.junit.cucumber.stepDef.GenericConstant;
 import net.serenity.bdd.junit.cucumber.steps.LoginTestSteps;
 import net.thucydides.core.annotations.Steps;
+import org.jruby.RubyBoolean;
+import org.junit.Assert;
+
+import static org.eclipse.jetty.webapp.MetaDataComplete.True;
+import static org.hamcrest.core.Is.is;
 
 
 /**
@@ -32,7 +37,7 @@ public class LoginStepDef extends GenericConstant {
 
     @Then("^I should see my Overview page\\.$")
     public void i_should_see_my_Account_Mails() throws Throwable {
-       LT_steps.isInboxPresent();
+       LT_steps.isLogoPresent();
     }
 
     @Given("^Orangehrm has launched$")
@@ -64,5 +69,11 @@ public class LoginStepDef extends GenericConstant {
     @Then("^I should see \"([^\"]*)\"$")
     public void iShouldSee(String errorMessage) throws Throwable {
         LT_steps.errorMessageIsPresent(errorMessage);
+    }
+
+    @Given("^Logon on the Orangehrm system$")
+    public void logonOnTheOrangehrmSystem() {
+        LT_steps.logon_the_orangehrm_system();
+        Assert.assertThat(LT_steps.isLogoPresent(),is(true));
     }
 }

@@ -12,14 +12,12 @@ import java.io.IOException;
  */
 public class GenericHook extends GenericConstant {
 
-    private EnvironmentVariables environmentVariables;
+
     @Before
     public void beforeTest(Scenario scenario) throws IOException{
 
         for(String s:scenario.getSourceTagNames()){
             System.out.println("Tag: " +s);
         }
-        String webEndpoint = EnvironmentSpecificConfiguration.from(environmentVariables).getProperty("security.token.url");
-
     }
 }
