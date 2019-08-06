@@ -9,9 +9,10 @@ Feature: Navigate to UserManagment feature
 
   Scenario Outline: navigate to specific tab
     When Navigate to specific tab "<firstLinkName>" -> "<secLinkName>"->"<thirdLinkName>"
+    And Click the "<userName>" link
 
-    Examples:
-    |firstLinkName|secLinkName    |thirdLinkName|
-    |Admin        |User Management|Users        |
-    |Admin        |Nationalities  |             |
+    Examples: User Management
+    |firstLinkName|secLinkName    |thirdLinkName|userName|
+    |Admin        |User Management|Users        |Admin   |
+    #|Admin        |Nationalities  |             |       |
 

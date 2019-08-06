@@ -6,7 +6,7 @@ import net.thucydides.core.steps.ScenarioSteps;
 
 import java.io.IOException;
 
-public class AdminOperateSteps extends ScenarioSteps {
+public class PublicModuleSteps extends ScenarioSteps {
 
     AccountsPage ap;
     @Step
@@ -15,4 +15,5 @@ public class AdminOperateSteps extends ScenarioSteps {
                                          String thirdLinkName) throws IOException {
         ap.moveOnAdminTab(firstLinkName,secLinkName,thirdLinkName);
     }
+
 }
