@@ -4,7 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenity.bdd.junit.cucumber.features.steps.serenity.LoginTestSteps;
+import net.serenity.bdd.junit.cucumber.features.steps.library.LoginTestSteps;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Assert;
 

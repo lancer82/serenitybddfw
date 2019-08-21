@@ -2,8 +2,8 @@ package net.serenity.bdd.junit.cucumber.features.steps;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
-import net.serenity.bdd.junit.cucumber.features.steps.serenity.AdminSteps;
-import net.serenity.bdd.junit.cucumber.features.steps.serenity.PublicModuleSteps;
+import net.serenity.bdd.junit.cucumber.features.steps.library.AdminSteps;
+import net.serenity.bdd.junit.cucumber.features.steps.library.PublicModuleSteps;
 import net.thucydides.core.annotations.Steps;
 
 

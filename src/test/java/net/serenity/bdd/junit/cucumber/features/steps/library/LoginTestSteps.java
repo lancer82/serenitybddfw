@@ -1,4 +1,4 @@
-package net.serenity.bdd.junit.cucumber.features.steps.serenity;
+package net.serenity.bdd.junit.cucumber.features.steps.library;
 
 import net.serenity.bdd.junit.cucumber.pages.AccountsPage;
 import net.serenity.bdd.junit.cucumber.pages.LoginPage;
