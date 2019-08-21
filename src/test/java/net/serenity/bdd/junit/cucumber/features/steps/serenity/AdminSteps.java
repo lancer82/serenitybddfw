@@ -1,4 +1,4 @@
-package net.serenity.bdd.junit.cucumber.steps;
+package net.serenity.bdd.junit.cucumber.features.steps.serenity;
 
 import net.serenity.bdd.junit.cucumber.pages.UserManagementPage;
 import net.thucydides.core.matchers.BeanMatcher;

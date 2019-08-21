@@ -1,23 +1,20 @@
-package net.serenity.bdd.junit.cucumber.stepDef.Login;
+package net.serenity.bdd.junit.cucumber.features.steps;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenity.bdd.junit.cucumber.stepDef.GenericConstant;
-import net.serenity.bdd.junit.cucumber.steps.LoginTestSteps;
+import net.serenity.bdd.junit.cucumber.features.steps.serenity.LoginTestSteps;
 import net.thucydides.core.annotations.Steps;
-import org.jruby.RubyBoolean;
 import org.junit.Assert;
 
-import static org.eclipse.jetty.webapp.MetaDataComplete.True;
 import static org.hamcrest.core.Is.is;
 
 
 /**
  * Created by arunkumar on 24-05-2017.
  */
-public class LoginStepDef extends GenericConstant {
+public class LoginStepDef {
 
 
     @Steps
