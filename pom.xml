@@ -6,7 +6,6 @@
     <groupId>com.bdd.serenity</groupId>
     <artifactId>serenitybddfw</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
 
     <name>Sample Serenity Cucumber project</name>
     <properties>
