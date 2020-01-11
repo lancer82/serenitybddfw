@@ -1,4 +1,4 @@
-package net.serenity.bdd.junit.cucumber.features.model;
+package net.serenity.bdd.junit.cucumber.model;
 
 /**
  * Created by arun on 25/05/2017.

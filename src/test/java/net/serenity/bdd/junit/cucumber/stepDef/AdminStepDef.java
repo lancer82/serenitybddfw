@@ -1,16 +1,16 @@
-package net.serenity.bdd.junit.cucumber.features.steps;
+package net.serenity.bdd.junit.cucumber.stepDef;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
-import net.serenity.bdd.junit.cucumber.features.steps.library.AdminSteps;
-import net.serenity.bdd.junit.cucumber.features.steps.library.PublicModuleSteps;
+import net.serenity.bdd.junit.cucumber.step.AdminSteps;
+import net.serenity.bdd.junit.cucumber.step.PublicModuleSteps;
 import net.thucydides.core.annotations.Steps;
 
 
 import static net.thucydides.core.matchers.BeanMatchers.the;
 import static org.hamcrest.Matchers.is;
 
-public class AdminStepDefs {
+public class AdminStepDef {
 
     @Steps
     PublicModuleSteps pm_steps;

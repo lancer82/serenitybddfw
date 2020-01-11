@@ -1,4 +1,4 @@
-package net.serenity.bdd.junit.cucumber.features.steps.library;
+package net.serenity.bdd.junit.cucumber.step;
 
 import net.serenity.bdd.junit.cucumber.pages.AccountsPage;
 import net.thucydides.core.annotations.Step;

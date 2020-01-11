@@ -4,7 +4,6 @@ import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.At;
 import net.thucydides.core.matchers.BeanMatcher;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import static net.thucydides.core.pages.components.HtmlTable.filterRows;
 import static net.thucydides.core.pages.components.HtmlTable.rowsFrom;
