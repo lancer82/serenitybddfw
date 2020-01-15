@@ -16,5 +16,6 @@ Feature: Login into orangehrmlive.com
     Then I should see "<errorMessage>"
 
     Examples: InvalidData
-      | username    | password   | errorMessage       |
-      | invalid     | invalid    | Invalid credentials|
+      | username | password | errorMessage       |
+      | invalid  | invalid  | Invalid credential |
+      | admin    | admin    | Invalid            |
