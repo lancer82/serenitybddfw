@@ -14,6 +14,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Set;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 /**
  * Created by arun on 25/05/2017.
@@ -81,7 +83,7 @@ public class LoginPage extends PageObject {
     }
 
     public void errorMessageVidisblr(String errorMessage){
-        Assert.assertEquals(errorInfo.getText(),errorMessage);
+        assertThat(errorInfo.getText()).containsOnlyOnce(errorMessage);
     }
 
     public void enterLoginInfo(String username,String password){
