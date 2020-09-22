@@ -12,7 +12,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity.version>2.3.4</serenity.version>
         <serenity.cucumber.version>2.3.4</serenity.cucumber.version>
-        <!--webdriver.driver>chrome</webdriver.driver-->
         <logback.version>1.2.3</logback.version>
         <encoding>UTF-8</encoding>
     </properties>
@@ -92,7 +91,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
-                    <skip>true</skip>
+                    <argLine>-Xmx1024m</argLine>
                 </configuration>
             </plugin>
             <plugin>
@@ -102,7 +101,6 @@
                     <includes>
                         <include>**/WebRunner.java</include>
                     </includes>
-                    <!--argLine>-Xmx512m</argLine-->
                     <!--systemPropertyVariables>
                         <webdriver.driver>${webdriver.driver}</webdriver.driver>
                     </systemPropertyVariables-->

@@ -18,4 +18,3 @@ Feature: Login into orangehrmlive.com
     Examples: InvalidData
       | username | password | errorMessage        |
       | invalid  | invalid  | Invalid credentials |
-      | admin    | admin    | Invalid             |

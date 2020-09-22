@@ -2,6 +2,7 @@ package net.serenity.bdd.junit.cucumber.step;
 
 import net.serenity.bdd.junit.cucumber.pages.AccountsPage;
 import net.serenity.bdd.junit.cucumber.pages.LoginPage;
+import net.serenity.bdd.junit.cucumber.pages.SogouPage;
 import net.serenitybdd.core.environment.EnvironmentSpecificConfiguration;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
@@ -14,6 +15,7 @@ public class LoginTestSteps extends ScenarioSteps {
 
     LoginPage LP;
     AccountsPage AP;
+    SogouPage SP;
     private EnvironmentVariables environmentVariables;
 
     @Step
@@ -53,6 +55,7 @@ public class LoginTestSteps extends ScenarioSteps {
 
     @Step
     public void enterLoginInfo(String username,String password){
+        SP.openSogou();
         LP.enterLoginInfo(username,password);
     }
 

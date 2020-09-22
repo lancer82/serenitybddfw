@@ -51,31 +51,9 @@ public class LoginPage extends PageObject {
     }
 
     public void verifyLoginPage(){
-        environmentVariables=ConfiguredEnvironment.getEnvironmentVariables();
-        String value= environmentVariables.getProperties().getProperty("drivers.windows.webdriver.chrome.driver");
-        System.out.println(value);
-
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.sogou.com/");
-        Set<String> allWindowsHandle = driver.getWindowHandles();
-        if(!allWindowsHandle.isEmpty()){
-            for(String windowHandle:allWindowsHandle){
-                try{
-                    if(driver.switchTo().window(windowHandle).getCurrentUrl().contains("sogou")){
-                        driver.findElement(By.id("query")).sendKeys("admin");
-                        break;
-                    }
-                }catch(NoSuchWindowException e){
-                    e.printStackTrace();
-                }
-            }
-        }
-        //driver.switchTo().window(parentWindowHandle);
-        driver.quit();
         loginEmailField.isDisplayed();
         loginPasswordField.isDisplayed();
         loginSubmitButton.isDisplayed();
-
     }
 
     public void orangeLogoDisplayed(){
