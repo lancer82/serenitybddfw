@@ -11,6 +11,4 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/features",
         plugin = {"pretty","html:target/cucumber","json:target/json/cucumber.json","rerun:rerun.txt"},
         tags = "@UnLogin")
-public class WebRunner{
-
-}
+public class WebRunner{}
