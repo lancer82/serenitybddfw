@@ -20,10 +20,10 @@ public class ConfUtil {
         return EnvironmentSpecificConfiguration.from(environmentVariables).getProperty(confProp);
     }
 
-    public static String replaceUrl(String oldUrl,String curUrl) {
-        StringBuilder url = new StringBuilder().append(oldUrl);
-        url.delete(oldUrl.indexOf("index.php"),oldUrl.length());
-        url.append(curUrl);
+    public static String updateUrl(String curUrl,String newUrl) {
+        StringBuilder url = new StringBuilder().append(curUrl);
+        url.delete(curUrl.indexOf("index.php"),curUrl.length());
+        url.append(newUrl);
         return url.toString();
     }
 }

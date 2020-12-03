@@ -15,6 +15,8 @@ public class PageUtil extends PageObject {
      *
      */
     public void navigateTo(String confEvnAll) {
-
+        String curUrl = ConfUtil.getConfProp(confEvnAll);
+        String newUrl = ConfUtil.updateUrl(getDriver().getCurrentUrl(),curUrl);
+        this.openUrl(newUrl);
     }
 }

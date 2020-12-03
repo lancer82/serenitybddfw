@@ -55,7 +55,7 @@ public class LoginTestSteps extends ScenarioSteps {
 
     @Step
     public void enterLoginInfo(String username,String password){
-        SP.openSogou();
+        //SP.openSogou();
         LP.enterLoginInfo(username,password);
     }
 

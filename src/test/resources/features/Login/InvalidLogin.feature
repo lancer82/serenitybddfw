@@ -1,4 +1,4 @@
-@UnLogin
+@UnLogin @Smoke
 Feature: Login into orangehrmlive.com
   As a Invalid User
   I want to login to the orangehrmlive.com
