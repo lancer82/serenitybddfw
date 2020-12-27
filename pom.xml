@@ -50,6 +50,13 @@
             <version>${serenity.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-rest-assured</artifactId>
+            <version>${serenity.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-cucumber6</artifactId>
