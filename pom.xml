@@ -10,8 +10,8 @@
     <name>Sample Serenity Cucumber project</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <serenity.version>2.3.4</serenity.version>
-        <serenity.cucumber.version>2.3.4</serenity.cucumber.version>
+        <serenity.version>2.3.10</serenity.version>
+        <serenity.cucumber.version>2.3.10</serenity.cucumber.version>
         <logback.version>1.2.3</logback.version>
         <encoding>UTF-8</encoding>
     </properties>
@@ -63,43 +63,51 @@
             <version>${serenity.cucumber.version}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
         </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>3.17.2</version>
         </dependency>
+
         <dependency>
             <groupId>com.googlecode.lambdaj</groupId>
             <artifactId>lambdaj</artifactId>
             <version>2.3.3</version>
         </dependency>
+
         <dependency>
             <groupId>com.github.tomakehurst</groupId>
             <artifactId>wiremock-jre8</artifactId>
             <version>2.27.2</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>4.1.2</version>
         </dependency>
+
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>4.1.2</version>
         </dependency>
+
     </dependencies>
     <build>
         <plugins>
@@ -112,6 +120,7 @@
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
@@ -144,6 +153,21 @@
                 <groupId>net.serenity-bdd.maven.plugins</groupId>
                 <artifactId>serenity-maven-plugin</artifactId>
                 <version>${serenity.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>net.serenity-bdd</groupId>
+                        <artifactId>serenity-single-page-report</artifactId>
+                        <version>${serenity.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.serenity-bdd</groupId>
+                        <artifactId>serenity-navigator-report</artifactId>
+                        <version>${serenity.version}</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <reports>single-page-html,navigator</reports>
+                </configuration>
                 <executions>
                     <execution>
                         <id>serenity-reports</id>
