@@ -1,4 +1,4 @@
-@Login
+@Login @Smoke
 Feature: Login into orangehrmlive.com
   As a Valid User
   I want to login to the orangehrm

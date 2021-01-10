@@ -5,7 +5,6 @@ package net.serenity.bdd.junit.cucumber.model;
  */
 public class LoginData {
 
-
     private String userName;
     private String password;
     private String errorMessage;
