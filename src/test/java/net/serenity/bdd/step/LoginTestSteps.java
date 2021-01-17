@@ -1,8 +1,8 @@
-package net.serenity.bdd.junit.cucumber.step;
+package net.serenity.bdd.step;
 
-import net.serenity.bdd.junit.cucumber.pages.AccountsPage;
-import net.serenity.bdd.junit.cucumber.pages.LoginPage;
-import net.serenity.bdd.junit.cucumber.pages.SogouPage;
+import net.serenity.bdd.pages.AccountsPage;
+import net.serenity.bdd.pages.LoginPage;
+import net.serenity.bdd.pages.SogouPage;
 import net.serenitybdd.core.environment.EnvironmentSpecificConfiguration;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;

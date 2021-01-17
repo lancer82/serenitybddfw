@@ -1,6 +1,6 @@
-package net.serenity.bdd.junit.cucumber.step;
+package net.serenity.bdd.step;
 
-import net.serenity.bdd.junit.cucumber.pages.AccountsPage;
+import net.serenity.bdd.pages.AccountsPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 

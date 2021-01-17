@@ -1,6 +1,6 @@
-package net.serenity.bdd.junit.cucumber.step;
+package net.serenity.bdd.step;
 
-import net.serenity.bdd.junit.cucumber.pages.UserManagementPage;
+import net.serenity.bdd.pages.UserManagementPage;
 import net.thucydides.core.matchers.BeanMatcher;
 import net.thucydides.core.steps.ScenarioSteps;
 

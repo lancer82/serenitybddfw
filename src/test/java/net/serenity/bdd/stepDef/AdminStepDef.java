@@ -1,10 +1,10 @@
-package net.serenity.bdd.junit.cucumber.stepDef;
+package net.serenity.bdd.stepDef;
 
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
-import net.serenity.bdd.junit.cucumber.step.AdminSteps;
-import net.serenity.bdd.junit.cucumber.step.PublicModuleSteps;
+import net.serenity.bdd.step.AdminSteps;
+import net.serenity.bdd.step.PublicModuleSteps;
 import net.thucydides.core.annotations.Steps;
 
 

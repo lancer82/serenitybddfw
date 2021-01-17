@@ -1,6 +1,6 @@
-package net.serenity.bdd.junit.cucumber.pages;
+package net.serenity.bdd.pages;
 
-import net.serenity.bdd.junit.cucumber.util.ConfUtil;
+import net.serenity.bdd.util.ConfUtil;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchWindowException;

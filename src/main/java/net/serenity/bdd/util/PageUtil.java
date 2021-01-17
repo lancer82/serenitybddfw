@@ -1,4 +1,4 @@
-package net.serenity.bdd.junit.cucumber.util;
+package net.serenity.bdd.util;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;

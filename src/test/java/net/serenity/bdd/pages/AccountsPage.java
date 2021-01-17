@@ -1,4 +1,4 @@
-package net.serenity.bdd.junit.cucumber.pages;
+package net.serenity.bdd.pages;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;

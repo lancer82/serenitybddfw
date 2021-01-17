@@ -1,4 +1,4 @@
-package net.serenity.bdd.junit.cucumber.util;
+package net.serenity.bdd.util;
 
 import net.serenitybdd.core.environment.ConfiguredEnvironment;
 import net.serenitybdd.core.environment.EnvironmentSpecificConfiguration;

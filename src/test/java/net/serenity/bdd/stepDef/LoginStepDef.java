@@ -1,11 +1,11 @@
-package net.serenity.bdd.junit.cucumber.stepDef;
+package net.serenity.bdd.stepDef;
 
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenity.bdd.junit.cucumber.step.LoginTestSteps;
+import net.serenity.bdd.step.LoginTestSteps;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Assert;
 

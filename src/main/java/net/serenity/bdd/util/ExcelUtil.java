@@ -1,4 +1,4 @@
-package net.serenity.bdd.junit.cucumber.util;
+package net.serenity.bdd.util;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;

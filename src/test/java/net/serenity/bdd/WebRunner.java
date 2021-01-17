@@ -1,4 +1,4 @@
-package net.serenity.bdd.junit.cucumber;
+package net.serenity.bdd;
 
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
