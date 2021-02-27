@@ -13,7 +13,7 @@ public class ConfUtil {
     /**
      * Function:Get the default customize environment variables with name
      * @param confProp eg: "website.username",“envrionment.” + <envrionment name> + ".webdriver.base.url"
-     * @return String
+     * @return
      */
     public static String getConfProp(String confProp) {
         EnvironmentVariables environmentVariables = ConfiguredEnvironment.getEnvironmentVariables();
