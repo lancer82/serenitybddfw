@@ -12,7 +12,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-import com.spire.xls.*;
 
 /**
  * @author Thinlk
@@ -56,13 +55,13 @@ public class ExcelUtil {
 
     }
 
-    public static void main(String[] args) throws NoSuchFieldException {
-        List<Map<String, Object>> excelData = getExcelDataFromFile("D:\\Project\\serenitybddfw\\src\\test\\resources\\envData.xlsx", "Sheet1");
-        Object obj = excelData.stream()
-                .filter(x -> x.containsValue("Rightname"))
-                .findFirst()
-                .orElseThrow(NoSuchFieldException::new)
-                .get("User name");
-        System.out.println(obj);
-    }
+//    public static void main(String[] args) throws NoSuchFieldException {
+//        List<Map<String, Object>> excelData = getExcelDataFromFile("D:\\Project\\serenitybddfw\\src\\test\\resources\\envData.xlsx", "Sheet1");
+//        Object obj = excelData.stream()
+//                .filter(x -> x.containsValue("Rightname"))
+//                .findFirst()
+//                .orElseThrow(NoSuchFieldException::new)
+//                .get("User name");
+//        System.out.println(obj);
+//    }
 }
