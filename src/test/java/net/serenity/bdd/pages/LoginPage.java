@@ -65,8 +65,9 @@ public class LoginPage extends PageObject {
     }
 
     public void enterLoginInfo(String username,String password){
-        loginEmailField.sendKeys(username);
+        enter(username).into(loginPasswordField);
         loginPasswordField.sendKeys(password);
+
     }
 
     public void clickLoginBtn(){

@@ -10,8 +10,8 @@
     <name>Sample Serenity Cucumber project</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <serenity.version>2.4.47</serenity.version>
-        <serenity.cucumber.version>2.4.47</serenity.cucumber.version>
+        <serenity.version>3.2.4</serenity.version>
+        <serenity.cucumber.version>3.2.4</serenity.cucumber.version>
         <logback.version>1.2.3</logback.version>
         <encoding>UTF-8</encoding>
     </properties>
