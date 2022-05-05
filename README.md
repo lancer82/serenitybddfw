@@ -87,3 +87,4 @@ You can access the corresponding webservice endpoint as follows:
 String webserviceEndpoint =  EnvironmentSpecificConfiguration.from(environmentVariables)
                                                              .getProperty("my.webservice.endpoint")
 ```
+https://www.cnblogs.com/gurenyumao/p/14721035.html
